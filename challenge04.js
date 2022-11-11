@@ -12,6 +12,7 @@ export default function createXmasTree(height) {
       '\n';
   }
 
+  // draw the trunk
   tree += `${'_'.repeat(height - 1)}#${'_'.repeat(height - 1)}\n`;
   tree += `${'_'.repeat(height - 1)}#${'_'.repeat(height - 1)}`;
 

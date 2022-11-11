@@ -5,9 +5,11 @@ export default function createXmasTree(height) {
     const asteriscsLength = 1 + (level - 1) * 2;
     const underscoresLength = height - level;
 
-    tree += `${'_'.repeat(underscoresLength)}${'*'.repeat(
-      asteriscsLength
-    )}${'_'.repeat(underscoresLength)}\n`;
+    tree +=
+      '_'.repeat(underscoresLength) +
+      '*'.repeat(asteriscsLength) +
+      '_'.repeat(underscoresLength) +
+      '\n';
   }
 
   tree += `${'_'.repeat(height - 1)}#${'_'.repeat(height - 1)}\n`;
